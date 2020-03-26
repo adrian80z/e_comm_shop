@@ -1,1 +1,1 @@
-# e_comm_shop
+# E-Commerce mini project
