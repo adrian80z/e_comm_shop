@@ -47,3 +47,4 @@ $RECYCLE.BIN/
 .vscode
 e_commerce
 db.sqlite3
+env.py
