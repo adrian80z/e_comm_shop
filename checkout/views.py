@@ -8,7 +8,9 @@ from django.utils import timezone
 from products.models import Product
 import stripe
 
+
 # Create your views here.
+
 stripe.api_key = settings.STRIPE_SECRET
 
 
@@ -54,9 +56,9 @@ def checkout(request):
         else:
             print(payment_form.errors)
             messages.error(
-                request, "We were unable to take payment with that card!")
+                request, "We were unable to take a payment with that card!")
     else:
         payment_form = MakePaymentForm()
-        order_form = OrderLineItem()
+        order_form = OrderForm()
 
     return render(request, "checkout.html", {'order_form': order_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})
