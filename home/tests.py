@@ -1,12 +1,12 @@
 from django.test import TestCase
-from .models import Product
+# from .models import Product
 
-# Create your tests here.
-class ProductTexts(TestCase):
-    """
-    Here we'll define the tests that we'll run against our Post models
-    """
+# # Create your tests here.
+# class ProductTexts(TestCase):
+#     """
+#     Here we'll define the tests that we'll run against our Post models
+#     """
 
-    def test_str(self):
-        test_name = Product(name= 'A product')
-        self.assertEqual(str(test_name), 'A product')
+#     def test_str(self):
+#         test_name = Product(name= 'A product')
+#         self.assertEqual(str(test_name), 'A product')
